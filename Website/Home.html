@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Pokemon.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="Images/pokeball.png">
+	<title>Pokemon Team Choser</title>
+</head>
+
+<body>
+
+	<!--All of the slides for each "page" for the website-->
+	<div class="slideshow-container">
+
+		<!--Introduction-->
+  		<div class="mySlides fade">
+    		<h2>Welcome to the</h2>
+            <h1>Pokemon Team Creator</h1>
+
+            <div class="text">
+                <p>Welcome to the pokemon team creator. You'll be able to choose a team of 6 pokemon and see how your team compares to a randomly generated team</p>
+                <p>Click the Pokeball below to get started</p>
+            </div>
+			
+			<!--Button on the page to move onto the next slide-->
+            <a class="nav_button" onclick="currentSlide(2)">
+                <img class="pokeball1" src="Images/pokeball.png" alt="Pokeball">
+			</a>
+			
+			<br>
+
+			<div class="text">Click the Pokeball at the bottom to return to the start</div>
+			
+  		</div>
+		
+		<!--Starters-->
+		<div class="mySlides fade">
+    		<h2>Choose your</h2>
+            <h1>Starter Pokemon</h1>
+			
+			<!--Text to show the user what option they have picked-->
+			<div class="text">
+				You have chosen: <p class="option-chosen" id="starter-chosen"></p> as your starter pokemon!
+			</div>
+	
+			<!--Each of the user's choices of selections-->
+			<div class="selections">
+				<!--Each of the options has a class which changes the color depending on the type of choice. The value is used to display which option the user has chosen-->
+				<button class="option-1" id="Start-1" onclick="storeStarter(this.value)" value="Venusaur">
+            		<img src="Images/Starter/venusaur.png" alt="Venusaur">
+        		</button>
+				<button class="option-1" id="Start-2" onclick="storeStarter(this.value)" value="Charizard">
+                    <img src="Images/Starter/charizard.png" alt="Charizard">
+                </button>
+                <button class="option-1" id="Start-3" onclick="storeStarter(this.value)" value="Blastoise">
+                    <img src="Images/Starter/blastoise.png" alt="Blastoise">
+                </button>
+                <button class="option-1" id="Start-4" onclick="storeStarter(this.value)" value="Meganium">
+                    <img src="Images/Starter/meganium.png" alt="Meganium">
+                </button>
+                <button class="option-1" id="Start-5" onclick="storeStarter(this.value)" value="Typhlosion">
+                    <img src="Images/Starter/typhlosion.png" alt="Typhlosion">
+                </button>
+                <button class="option-1" id="Start-6" onclick="storeStarter(this.value)" value="Feraligatr">
+                    <img src="Images/Starter/feraligatr.png" alt="Feraligatr">
+                </button>
+                <button class="option-1" id="Start-7" onclick="storeStarter(this.value)" value="Sceptile">
+                    <img src="Images/Starter/sceptile.png" alt="Sceptile">
+                </button>
+                <button class="option-1" id="Start-8" onclick="storeStarter(this.value)" value="Blaziken">
+                    <img src="Images/Starter/blaziken.png" alt="Blaziken">
+                </button>
+                <button class="option-1" id="Start-9" onclick="storeStarter(this.value)" value="Swampert">
+                    <img src="Images/Starter/swampert.png" alt="Swampert">
+                </button>
+                <button class="option-1" id="Start-10" onclick="storeStarter(this.value)" value="Torterra">
+                    <img src="Images/Starter/torterra.png" alt="Torterra">
+                </button>
+                <button class="option-1" id="Start-11" onclick="storeStarter(this.value)" value="Infernape">
+                    <img src="Images/Starter/infernape.png" alt="Infernape">
+                </button>
+                <button class="option-1" id="Start-12" onclick="storeStarter(this.value)" value="Empoleon">
+                    <img src="Images/Starter/empoleon.png" alt="Empoleon">
+                </button>
+                <button class="option-1" id="Start-13" onclick="storeStarter(this.value)" value="Serperior">
+                    <img src="Images/Starter/serperior.png" alt="Serperior">
+                </button>
+                <button class="option-1" id="Start-14" onclick="storeStarter(this.value)" value="Emboar">
+                    <img src="Images/Starter/emboar.png" alt="Emboar">
+                </button>
+                <button class="option-1" id="Start-15" onclick="storeStarter(this.value)" value="Samurott">
+                    <img src="Images/Starter/samurott.png" alt="Samurott">
+                </button>
+                <button class="option-1" id="Start-16" onclick="storeStarter(this.value)" value="Chesnaught">
+                    <img src="Images/Starter/chesnaught.png" alt="Chesnaught">
+                </button>
+                <button class="option-1" id="Start-17" onclick="storeStarter(this.value)" value="Delphox">
+                    <img src="Images/Starter/delphox.png" alt="Delphox">
+                </button>
+                <button class="option-1" id="Start-18" onclick="storeStarter(this.value)" value="Greninja">
+                    <img src="Images/Starter/greninja.png" alt="Greninja">
+                </button>
+                <button class="option-1" id="Start-19" onclick="storeStarter(this.value)" value="Decidueye">
+                    <img src="Images/Starter/decidueye.png" alt="Decidueye">
+                </button>
+                <button class="option-1" id="Start-20" onclick="storeStarter(this.value)" value="Incineroar">
+                    <img src="Images/Starter/incineroar.png" alt="Incineroar">
+                </button>
+                <button class="option-1" id="Start-21" onclick="storeStarter(this.value)" value="Primarina">
+                    <img src="Images/Starter/primarina.png" alt="Primarina">
+                </button>
+                <button class="option-1" id="Start-22" onclick="storeStarter(this.value)" value="Rillaboom">
+                    <img src="Images/Starter/rillaboom.png" alt="Rillaboom">
+                </button>
+                <button class="option-1" id="Start-23" onclick="storeStarter(this.value)" value="Cinnderace">
+                    <img src="Images/Starter/cinderace.png" alt="Cinnderace">
+                </button>
+                <button class="option-1" id="Start-24" onclick="storeStarter(this.value)" value="Inteleon">
+                    <img src="Images/Starter/inteleon.png" alt="Inteleon">
+                </button>
+			</div>
+			
+			<div class="section_footer"></div>
+  		</div>
+
+		<!--EEveelutions-->
+  		<div class="mySlides fade">
+    		<h2>Choose your</h2>
+            <h1>Eeveelution</h1>
+			
+			<div class="text">
+				You have chosen: <p class="option-chosen" id="eevee-chosen"></p> as your eeveelution!
+			</div>
+			
+			<section class="selections">
+				<button class="option-2" id="Eevee-1" onclick="storeEevee(this.value)" value="Vapoureon">
+                    <img src="Images/Eeveelution/vaporeon.png" alt="Vaporeon">
+                </button>
+                <button class="option-2" id="Eevee-2" onclick="storeEevee(this.value)" value="Jolteon">
+                    <img src="Images/Eeveelution/jolteon.png" alt="Jolteon">
+                </button>
+                <button class="option-2" id="Eevee-3" onclick="storeEevee(this.value)" value="Flareon">
+                    <img src="Images/Eeveelution/flareon.png" alt="Flareon">
+                </button>
+                <button class="option-2" id="Eevee-4" onclick="storeEevee(this.value)" value="Espeon">
+                    <img src="Images/Eeveelution/espeon.png" alt="Espeon">
+                </button>
+                <button class="option-2" id="Eevee-5" onclick="storeEevee(this.value)" value="Umbreon">
+                    <img src="Images/Eeveelution/umbreon.png" alt="Umbreon">
+                </button>
+                <button class="option-2" id="Eevee-6" onclick="storeEevee(this.value)" value="Leafeon">
+                    <img src="Images/Eeveelution/leafeon.png" alt="Leafeaon">
+                </button>
+                <button class="option-2" id="Eevee-7" onclick="storeEevee(this.value)" value="Glaceon">
+                    <img src="Images/Eeveelution/glaceon.png" alt="Glaceon">
+                </button>
+                <button class="option-2" id="Eevee-8" onclick="storeEevee(this.value)" value="Sylveon">
+                    <img src="Images/Eeveelution/sylveon.png" alt="Sylveon">
+                </button>
+              </section>
+  		</div>
+
+		<!--Fossils-->
+  		<div class="mySlides fade">
+			<h2>Choose your</h2>
+            <h1>Fossil Pokemon</h1>
+			
+			<div class="text">
+				You have chosen: <p class="option-chosen" id="fossil-chosen"></p> as your fossil pokemon!
+			</div>
+			
+            <section class="selections">
+                <button class="option-3" id="Fossil-1" onclick="storeFossil(this.value)" value="Omastar">
+                    <img src="Images/Fossil/Omastar.png" alt="Omastar">
+                </button>
+                <button class="option-3" id="Fossil-2" onclick="storeFossil(this.value)" value="Kabutops">
+                    <img src="Images/Fossil/Kabutops.png" alt="Kabutops">
+                </button>
+                <button class="option-3" id="Fossil-3" onclick="storeFossil(this.value)" value="Aerodactyl">
+                    <img src="Images/Fossil/Aerodactyl.png" alt="Aerodactyl">
+                </button>
+                <button class="option-3" id="Fossil-4" onclick="storeFossil(this.value)" value="Cradily">
+                    <img src="Images/Fossil/Cradily.png" alt="Cradily">
+                </button>
+                <button class="option-3" id="Fossil-5" onclick="storeFossil(this.value)" value="Armaldo">
+                  <img src="Images/Fossil/Armaldo.png" alt="Armaldo">
+                </button>
+                <button class="option-3" id="Fossil-6" onclick="storeFossil(this.value)" value="Rapardos">
+                    <img src="Images/Fossil/Rampardos.png" alt="Rampardos">
+                </button>
+                <button class="option-3" id="Fossil-7" onclick="storeFossil(this.value)" value="Bastiodon">
+                    <img src="Images/Fossil/Bastiodon.png" alt="Bastiodon">
+                </button>
+                <button class="option-3" id="Fossil-8" onclick="storeFossil(this.value)" value="Carracosta">
+                    <img src="Images/Fossil/Carracosta.png" alt="Carracosta">
+                </button>
+                <button class="option-3" id="Fossil-9" onclick="storeFossil(this.value)" value="Archeops">
+                  <img src="Images/Fossil/Archeops.png" alt="Archeops">
+                </button>
+                <button class="option-3" id="Fossil-10" onclick="storeFossil(this.value)" value="Tyrantrum">
+                    <img src="Images/Fossil/Tyrantrum.png" alt="Tyantrum">
+                </button>
+                <button class="option-3" id="Fossil-11" onclick="storeFossil(this.value)" value="Auroru">
+                    <img src="Images/Fossil/Aurorus.png" alt="Aurorus">
+                </button>
+            </section>
+  		</div>
+		
+		<!--Ultra Beasts-->
+  		<div class="mySlides fade">
+			<h2>Choose your</h2>
+            <h1>Ultra Beast</h1>
+			
+			<div class="text">
+				You have chosen: <p class="option-chosen"  id="ubeast-chosen"></p> as your Ultra Beast!
+			</div>
+			
+            <section class="selections">
+                <button class="option-4" id="UBeast-1" onclick="storeUBeast(this.value)" value="Buzzwole">
+                    <img src="Images/UBeast/buzzwole.png" alt="Buzzwole">
+                </button>
+                <button class="option-4" id="UBeast-2" onclick="storeUBeast(this.value)" value="Celesteela">
+                    <img src="Images/UBeast/celesteela.png" alt="Celesteela">
+                </button>
+                <button class="option-4" id="UBeast-3" onclick="storeUBeast(this.value)" value="Guzzlord">
+                    <img src="Images/UBeast/guzzlord.png" alt="Guzzlord">
+                </button>
+                <button class="option-4" id="UBeast-4" onclick="storeUBeast(this.value)" value="Kartana">
+                    <img src="Images/UBeast/kartana.png" alt="kartana">
+                </button>
+                <button class="option-4" id="UBeast-5" onclick="storeUBeast(this.value)" value="Nihilego">
+                  <img src="Images/UBeast/nihilego.png" alt="Nihilego">
+                </button>
+                <button class="option-4" id="UBeast-6" onclick="storeUBeast(this.value)" value="Pheromosa">
+                    <img src="Images/UBeast/pheromosa.png" alt="Pheromosa">
+                </button>
+                <button class="option-4" id="UBeast-7" onclick="storeUBeast(this.value)" value="Xurkitree">
+                    <img src="Images/UBeast/xurkitree.png" alt="Xurkitree">
+                </button>
+            </section>
+  		</div>
+		
+		<!--Pseudo Legendaries-->
+  		<div class="mySlides fade">
+			<h2>Choose your</h2>
+            <h1>Peudo Legendary</h1>
+			
+			<div class="text">
+				You have chosen: <p class="option-chosen" id="plegend-chosen"></p> as your Pseudo Legendary!
+			</div>
+			
+            <section class="selections">
+                <button class="option-5" id="PLegend-1" onclick="storePLegend(this.value)" value="Dragonite">
+                    <img src="Images/PLegend/dragonite.png" alt="Dragonite">
+                </button>
+				<button class="option-5" id="PLegend-2" onclick="storePLegend(this.value)" value="Tyranitar">
+                    <img src="Images/PLegend/tyranitar.png" alt="Tyranitar">
+                </button>
+				<button class="option-5" id="PLegend-3" onclick="storePLegend(this.value)" value="Salamance">
+                    <img src="Images/PLegend/salamence.png" alt="Salamance">
+                </button>
+				<button class="option-5" id="PLegend-4" onclick="storePLegend(this.value)" value="Metagross">
+                    <img src="Images/PLegend/metagross.png" alt="Metagross">
+                </button>
+				<button class="option-5" id="PLegend-5" onclick="storePLegend(this.value)" value="Garchomp">
+                    <img src="Images/PLegend/garchomp.png" alt="Garchomp">
+                </button>
+				<button class="option-5" id="PLegend-6" onclick="storePLegend(this.value)" value="Hydreigon">
+                    <img src="Images/PLegend/hydreigon.png" alt="Hydreigon">
+                </button>
+				<button class="option-5" id="PLegend-7" onclick="storePLegend(this.value)" value="Goodra">
+                    <img src="Images/PLegend/goodra.png" alt="Goodra">
+                </button>
+				<button class="option-5" id="PLegend-8" onclick="storePLegend(this.value)" value="Kommo-o">
+                    <img src="Images/PLegend/kommo-o.png" alt="Kommo-o">
+                </button>
+				<button class="option-5" id="PLegend-9" onclick="storePLegend(this.value)" value="Dragapult">
+                    <img src="Images/PLegend/dragapult.png" alt="Dragapult">
+                </button>
+            </section>
+  		</div>
+		
+		<!--Legendaries-->
+  		<div class="mySlides fade">
+			<h2>Choose your</h2>
+            <h1>Legendary Pokemon</h1>
+			
+			<div class="text">
+				You have chosen: <p class="option-chosen" id="legend-chosen"></p> as your Legendary Pokemon!
+			</div>
+			
+            <section class="selections">
+                <button class="option-6" id="Legend-1" onclick="storeLegend(this.value)" value="Mewtwo">
+                    <img src="Images/Legend/mewtwo.png" alt="Mewtwo">
+                </button>
+				<button class="option-6" id="Legend-2" onclick="storeLegend(this.value)" value="Lugia">
+                    <img src="Images/Legend/lugia.png" alt="Lugia">
+                </button>
+				<button class="option-6" id="Legend-3" onclick="storeLegend(this.value)" value="Ho-oh">
+                    <img src="Images/Legend/ho-oh.png" alt="Ho-oh">
+                </button>
+				<button class="option-6" id="Legend-4" onclick="storeLegend(this.value)" value="Kyogre">
+                    <img src="Images/Legend/kyogre.png" alt="Kyogre">
+                </button>
+				<button class="option-6" id="Legend-5" onclick="storeLegend(this.value)" value="Groudon">
+                    <img src="Images/Legend/groudon.png" alt="Groudon">
+                </button>
+				<button class="option-6" id="Legend-6" onclick="storeLegend(this.value)" value="Rayquaza">
+                    <img src="Images/Legend/rayquaza.png" alt="Rayquaza">
+                </button>
+				<button class="option-6" id="Legend-7" onclick="storeLegend(this.value)" value="Dialga">
+                    <img src="Images/Legend/dialga.png" alt="Dialga">
+                </button>
+				<button class="option-6" id="Legend-8" onclick="storeLegend(this.value)" value="Palkia">
+                    <img src="Images/Legend/palkia.png" alt="Palkia">
+                </button>
+				<button class="option-6" id="Legend-9" onclick="storeLegend(this.value)" value="Giratina">
+                    <img src="Images/Legend/giratina.png" alt="Giratina">
+                </button>
+				<button class="option-6" id="Legend-10" onclick="storeLegend(this.value)" value="Reshiram">
+                    <img src="Images/Legend/reshiram.png" alt="Reshiram">
+                </button>
+				<button class="option-6" id="Legend-11" onclick="storeLegend(this.value)" value="Zekrom">
+                    <img src="Images/Legend/zekrom.png" alt="Zekrom">
+                </button>
+				<button class="option-6" id="Legend-12" onclick="storeLegend(this.value)" value="Kyurem">
+                    <img src="Images/Legend/kyurem.png" alt="Kyurem">
+                </button>
+				<button class="option-6" id="Legend-13" onclick="storeLegend(this.value)" value="Xerneas">
+                    <img src="Images/Legend/xerneas.png" alt="Xerneas">
+                </button>
+				<button class="option-6" id="Legend-14" onclick="storeLegend(this.value)" value="Yveltal">
+                    <img src="Images/Legend/yveltal.png" alt="Yveltal">
+                </button>
+				<button class="option-6" id="Legend-15" onclick="storeLegend(this.value)" value="Zygarde">
+                    <img src="Images/Legend/zygarde.png" alt="Zygarde">
+                </button>
+				<button class="option-6" id="Legend-16" onclick="storeLegend(this.value)" value="Solgaleo">
+                    <img src="Images/Legend/solgaleo.png" alt="Solgaleo">
+                </button>
+				<button class="option-6" id="Legend-17" onclick="storeLegend(this.value)" value="Lunala">
+                    <img src="Images/Legend/lunala.png" alt="Lunala">
+                </button>
+				<button class="option-6" id="Legend-18" onclick="storeLegend(this.value)" value="Necrozma">
+                    <img src="Images/Legend/necrozma.png" alt="Necrozma">
+                </button>
+				<button class="option-6" id="Legend-19" onclick="storeLegend(this.value)" value="Zacian">
+                    <img src="Images/Legend/zacian.png" alt="Zacian">
+                </button>
+				<button class="option-6" id="Legend-20" onclick="storeLegend(this.value)" value="Zamazenta">
+                    <img src="Images/Legend/zamazenta.png" alt="Zamazenta">
+                </button>
+                <button class="option-6" id="Legend-21" onclick="storeLegend(this.value)" value="Eternatus">
+                    <img src="Images/Legend/eternatus.png" alt="Eternatus">
+                </button>
+            </section>
+  		</div>
+		
+		<!--Team Chosen-->
+  		<div class="mySlides fade">
+			<h2>Here is your</h2>
+            <h1>Pokemon Team</h1>
+						
+			<div class="selections2">
+				<div class="info-grid">
+                    <div class="item1 text2">
+						<p class="option-chosen" id="starter-chosen1"></p>
+					</div>
+                    <div class="item2">
+						<img class="info-img option-1" id="starter-img" src="" alt="Image of starter chosen">
+						
+					</div>
+                    <div class="item3 text3">
+						Starter pokemon are the first pokemon that the player recieve in the region. These cute pokemon can evolve into strong competetors in a fight.
+					</div>
+				</div>
+				
+				<div class="info-grid">
+                    <div class="item1 text2">
+						<p class="option-chosen" id="eevee-chosen1"></p>
+					</div>
+                    <div class="item2">
+						<img class="info-img option-2" id="eevee-img" src="" alt="Image of eeveelution chosen">
+						
+					</div>
+                    <div class="item3 text3">
+						<div>Hp:</div>
+						<div>Attack:</div>
+						<div>Defence:</div>
+						<div>Sp. Attack:</div>
+						<div>Sp. Defence:</div>
+						<div>Speed:</div>
+					</div>
+				</div>
+				
+				<div class="info-grid">
+                    <div class="item1 text2">
+						<p class="option-chosen" id="fossil-chosen1"></p>
+					</div>
+                    <div class="item2">
+						<img class="info-img option-3" id="fossil-img" src="" alt="Image of fossil chosen">
+						
+					</div>
+                    <div class="item3 text3">
+						<div>Hp:</div>
+						<div>Attack:</div>
+						<div>Defence:</div>
+						<div>Sp. Attack:</div>
+						<div>Sp. Defence:</div>
+						<div>Speed:</div>
+					</div>
+				</div>
+				
+				<div class="info-grid">
+                    <div class="item1 text2">
+						<p class="option-chosen" id="ubeast-chosen1"></p>
+					</div>
+                    <div class="item2">
+						<img class="info-img option-4" id="ubeast-img" src="" alt="Image of ultra beast chosen">
+						
+					</div>
+                    <div class="item3 text3">
+						<div>Hp:</div>
+						<div>Attack:</div>
+						<div>Defence:</div>
+						<div>Sp. Attack:</div>
+						<div>Sp. Defence:</div>
+						<div>Speed:</div>
+					</div>
+				</div>
+				
+				<div class="info-grid">
+                    <div class="item1 text2">
+						<p class="option-chosen" id="plegend-chosen1"></p>
+					</div>
+                    <div class="item2">
+						<img class="info-img option-5" id="plegend-img" src="" alt="Image of pseudo legendary chosen">
+						
+					</div>
+                    <div class="item3 text3">
+						<div>Hp:</div>
+						<div>Attack:</div>
+						<div>Defence:</div>
+						<div>Sp. Attack:</div>
+						<div>Sp. Defence:</div>
+						<div>Speed:</div>
+					</div>
+				</div>
+				
+				<div class="info-grid">
+                    <div class="item1 text2">
+						<p class="option-chosen" id="legend-chosen1"></p>
+					</div>
+                    <div class="item2">
+						<img class="info-img option-6" id="legend-img" src="" alt="Image of legendary chosen">
+						
+					</div>
+                    <div class="item3 text3">
+						<div>Hp:</div>
+						<div>Attack:</div>
+						<div>Defence:</div>
+						<div>Sp. Attack:</div>
+						<div>Sp. Defence:</div>
+						<div>Speed:</div>
+					</div>
+				</div>
+			</div>
+			
+			<h2>How did you do?</h2>
+		
+  		</div>
+  		
+	</div>
+	
+	<div id="wrapper">
+		<!--Music Player loadd on the page but with no display-->
+		<div id="player">
+			<audio id="music_player" loop>
+            	<source src="audio/battle_music.mp3"/>
+            </audio>
+		</div>
+	</div>
+		
+    	
+	<footer>	
+		<div class="footer_buttons">
+			<!--Navigation Circles-->
+			<section>
+				<!--Each dot corresponds to a specific slide and when clicked the page goes to that slide-->
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+				<span class="dot" onclick="currentSlide(6)"></span>
+				<span class="dot" onclick="currentSlide(7)"></span>
+				<span class="dot" onclick="currentSlide(8)"></span>
+			</section>
+			
+			<!--Navigation Buttons-->
+			<section>
+				<!--Goes back one slide-->
+                <a class="nav_button" onclick="plusSlides(-1)">
+                    <img class="footer_img" src="Images/ArrowL.png" alt="Left Arrow">
+                </a>
+				<!--Goes to the first slide-->
+                <a class="nav_button" onclick="currentSlide(1)">
+                    <img class="footer_img" src="Images/pokeball.png" alt="Home Button">
+                </a>
+				<!--Goes forwards one slide-->
+                <a class="nav_button" onclick="plusSlides(1)">
+                    <img class="footer_img" src="Images/ArrowR.png" alt="Right Arrow">
+                </a>
+			</section>
+			
+			<!--Media Player-->
+			<section style="display: inline">
+				<!--Play button to start music-->
+				<input type="image" src="Images/player/play.png" onclick="play_aud()" class="play_button" alt="Play Button">
+				<!--Pause button to pause music-->
+            	<input type="image" src="Images/player/pause.png" onclick="pause_aud()" class="play_button" alt="Pause Button">
+				<!--Stop button to stop music and return it to the start-->
+            	<input type="image" src="Images/player/stop.png" onclick="stop_aud()" class="play_button" alt="Stop Button">
+				<!--Volume slider to change the volume of the music-->
+                <img src="Images/player/volume.png" id="vol_img" alt="Volume">
+                <input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="0.5">
+			</section>
+				
+		</div>
+	</footer>
+		
+	<script src="javascript/slideshow.js"></script>
+	<script src="javascript/store_options.js"></script>
+	<script src="javascript/audio_player.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+	<script src="javascript/pokebase.js"></script>
+	
+</body>
+</html>
